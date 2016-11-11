@@ -18,33 +18,37 @@ printf("La media e' %f\n", media);
 printf("Il prodotto e' %d\n", prodotto);
 
 
-if (a>b && a>c)
+if (a==b && b==c)
 {
-  printf("Il maggiore e' %d\n", a);
+  printf("I tre numeri sono uguali\n");
 }
-if (b>c && b>a)
-{
-  printf("Il maggiore e' %d\n", b);
-}
-if (c>a && c>b)
-{
-  printf("Il maggiore e' %d\n", c);
-}
-if (a<b && a<c) 
-{
-   printf("Il minore e' %d\n", a);
-}
-if (b<a && b<c)
-{
+if (a>c && c>b)
+{  
+  printf("Il numero maggiore e' %d\n", a);
   printf("Il numero minore e' %d\n", b);
 }
-if (c<a && c<b)
+if (a>b && b>c)
 {
+  printf("Il numero maggiore e' %d\n", a);
   printf("Il numero minore e' %d\n", c);
 }
-else
+if (b>a && a>c)
 {
-  printf("I numeri sono uguali\n");
+  printf("Il numero maggiore e' %d\n", b);
+  printf("Il numero minore e' %d\n", c);
+}
+if (c>a && a>b)
+  printf("Il numero maggiore e' %d\n", c);
+  printf("Il numero minore e' %d\n", b);
+if(b>c && b>a)
+{
+  printf("Il numero maggiore e' %d\n", b);
+  printf("Il numero minore e' %d\n", a);
+}
+else 
+{
+  printf("Il numero maggiore e' %d\n", c);
+  printf("Il numero minore e' %d\n", a);
 }
 return 0;
 }
