@@ -22,33 +22,29 @@ if (a==b && b==c)
 {
   printf("I tre numeri sono uguali\n");
 }
-if (a>c && c>b)
+else if (a>b && a>c)
 {  
   printf("Il numero maggiore e' %d\n", a);
-  printf("Il numero minore e' %d\n", b);
 }
-if (a>b && b>c)
-{
-  printf("Il numero maggiore e' %d\n", a);
-  printf("Il numero minore e' %d\n", c);
-}
-if (b>a && a>c)
+else if (b>c && b>a)
 {
   printf("Il numero maggiore e' %d\n", b);
-  printf("Il numero minore e' %d\n", c);
 }
-if (c>a && a>b)
+else if (c>a && c>b)
+{
   printf("Il numero maggiore e' %d\n", c);
-  printf("Il numero minore e' %d\n", b);
-if(b>c && b>a)
+}
+else if (a<b && a<c)
 {
-  printf("Il numero maggiore e' %d\n", b);
   printf("Il numero minore e' %d\n", a);
+}
+else if (b<a && b<c)
+{
+  printf("Il numero minore e' %d\n", b);
 }
 else 
 {
-  printf("Il numero maggiore e' %d\n", c);
-  printf("Il numero minore e' %d\n", a);
+  printf("Il numero minore e' %d", c);
 }
 return 0;
 }
