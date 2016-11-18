@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-int a, b, c, somma, prodotto;
+int a, b, c, somma, prodotto, max, min;
 float media;
 printf("Inserire il primo numero: ");
 scanf("%d", &a);
@@ -17,34 +17,31 @@ printf("La somma e' %d\n", somma);
 printf("La media e' %f\n", media);
 printf("Il prodotto e' %d\n", prodotto);
 
-
+max=a;
 if (a==b && b==c)
 {
   printf("I tre numeri sono uguali\n");
 }
-else if (a>b && a>c)
-{  
-  printf("Il numero maggiore e' %d\n", a);
-}
-else if (b>c && b>a)
+if (b>max)
 {
-  printf("Il numero maggiore e' %d\n", b);
+  max=b;
 }
-else if (c>a && c>b)
+if (c>max)
 {
-  printf("Il numero maggiore e' %d\n", c);
+  max=c;
 }
-else if (a<b && a<c)
+
+min = a;
+
+if (b<min)
 {
-  printf("Il numero minore e' %d\n", a);
+  min=b;
 }
-else if (b<a && b<c)
+if (c<b)
 {
-  printf("Il numero minore e' %d\n", b);
+  min=c;
 }
-else 
-{
-  printf("Il numero minore e' %d", c);
-}
+printf("%d e' il maggiore\n", max);
+printf("%d e' il minore\n", min);
 return 0;
 }
